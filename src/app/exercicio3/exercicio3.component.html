@@ -1,13 +1,15 @@
-<input type="text" name="nome" [(ngModel)]="nome">
-Nome: {{ nome }}
+<form>
+  <input type="text" name="nome" [(ngModel)]="nome">
+  Nome: {{ nome }}
 
-<br>
-<input type="text" name="e-mail" [(ngModel)]="email">
-E-mail: {{ email }}
+  <br>
+  <input type="text" name="e-mail" [(ngModel)]="email">
+  E-mail: {{ email }}
 
-<br>
-<input type="text" name="telefone" [(ngModel)]="telefone">
-Telefone: {{ telefone }}
+  <br>
+  <input type="text" name="telefone" [(ngModel)]="telefone">
+  Telefone: {{ telefone }}
 
-<br>
-<button (click)="alerta($event)">Enviar</button>
+  <br>
+  <button (click)="alerta($event)">Enviar</button>
+</form>
