@@ -1,0 +1,31 @@
+<h2>Interpolação</h2>
+<p>
+  {{ curso }} - {{ texto }} - {{ 5 + 6 }}
+</p>
+
+<p>
+  {{ getTexto() }}
+</p>
+
+<h2>Propertie Binding</h2>
+<!-- Colocar a propriedade entre [] -->
+<input name="nome" [value]="nome">
+<br>
+<img [src]="enderecoImg">
+
+<h2>Evento</h2>
+<input type="text" name="" (keyup)="alterarValor($event)">
+<br>
+<button (click)="emiteAlerta($event)" >Emite Alerta</button>
+
+<h2>Two way data binding</h2>
+<!-- Manual -->
+<!-- <input name="sobrenome" (keyup)="setaSobrenome($event.target.value)">
+<input name="sobrenome" [value]="sobrenome" (keyup)="setaSobrenome($event.target.value)"> -->
+
+<!-- Sem two way... -->
+<input name="nome" ngModel="sobrenome">
+<!-- Com two way -->
+<input name="sobrenome" [(ngModel)]="sobrenome">
+
+Sobrenome: {{ sobrenome }}
