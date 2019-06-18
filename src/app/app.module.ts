@@ -13,6 +13,9 @@ import { PrimeiroComponenteComponent } from './primeiro-componente/primeiro-comp
 import { ExercicioComponent } from './exercicio-2/exercicio/exercicio.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { Exercicio3Component } from './exercicio3/exercicio3.component';
+import { PropertiesBindingComponent } from './properties-binding/properties-binding.component';
+import { InputPropertyComponent } from './properties-binding/input-property/input-property.component';
+import { OutputPropertyComponent } from './properties-binding/output-property/output-property.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { Exercicio3Component } from './exercicio3/exercicio3.component';
     PrimeiroComponenteComponent,
     ExercicioComponent,
     DataBindingComponent,
-    Exercicio3Component
+    Exercicio3Component,
+    PropertiesBindingComponent,
+    InputPropertyComponent,
+    OutputPropertyComponent
   ],
   imports: [
     BrowserModule,
