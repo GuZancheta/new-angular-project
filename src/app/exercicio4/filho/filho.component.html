@@ -1,0 +1,11 @@
+<p>
+  {{ titulo }}
+</p>
+
+<!-- <input type="text" name="pesquisa" [(ngModel)]="pesquisa">
+<button (click)="onSearch($event.target.value)">Pesquisar</button> -->
+
+<!-- <input type="text" name="pesquisa" (blur)="armazenarpesquisa($event)"; -->
+
+<input type="text" name="pesquisa" #pesquisa>
+<button (click)="onSearch(pesquisa.value)">Pesquisar</button>

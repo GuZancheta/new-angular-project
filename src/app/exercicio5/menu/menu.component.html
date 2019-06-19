@@ -1,0 +1,17 @@
+<ul>
+  <li *ngFor="let item of menus" >
+    <a (click)="link = item.link">{{ item.descricao }}</a>
+  </li>
+</ul>
+
+<div [ngSwitch]="link" >
+  <div *ngSwitchCase="'home'">
+    <p *ngIf="valida || !valida">
+      {{ texto }}
+    </p>
+    <button (click)="alternar()">Alterar Titulo</button>
+  </div>
+  <div *ngSwitchCase="'pessoa'">
+    Acessou Pessoa
+  </div>
+</div>

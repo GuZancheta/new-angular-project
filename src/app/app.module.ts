@@ -16,6 +16,12 @@ import { Exercicio3Component } from './exercicio3/exercicio3.component';
 import { PropertiesBindingComponent } from './properties-binding/properties-binding.component';
 import { InputPropertyComponent } from './properties-binding/input-property/input-property.component';
 import { OutputPropertyComponent } from './properties-binding/output-property/output-property.component';
+import { FilhoComponent } from './exercicio4/filho/filho.component';
+import { PaiComponent } from './exercicio4/pai/pai.component';
+import { ViewChildComponent } from './view-child/view-child.component';
+import { IfForComponent } from './diretivas-primeira-parte/if-for/if-for.component';
+import { DiretivasPrimeiraParteComponent } from './diretivas-primeira-parte/diretivas-primeira-parte.component';
+import { MenuComponent } from './exercicio5/menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +36,13 @@ import { OutputPropertyComponent } from './properties-binding/output-property/ou
     Exercicio3Component,
     PropertiesBindingComponent,
     InputPropertyComponent,
-    OutputPropertyComponent
+    OutputPropertyComponent,
+    FilhoComponent,
+    PaiComponent,
+    ViewChildComponent,
+    IfForComponent,
+    DiretivasPrimeiraParteComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
