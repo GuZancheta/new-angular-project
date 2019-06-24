@@ -23,10 +23,10 @@ export class MenuComponent implements OnInit {
 
   alternar() {
     if (this.valida === false) {
-      this.texto = 'Titulo 2';
+      this.texto = 'Titulo 1';
       this.valida = true;
     } else {
-      this.texto = 'Titulo 1';
+      this.texto = 'Titulo 2';
       this.valida = false;
     }
   }
